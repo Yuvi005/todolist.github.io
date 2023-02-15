@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(120deg, rgb(25, 15, 85), rgb(105, 94, 252));
+    min-height: 100vh;
+}
+
+header,form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+header h1 {
+    color: white;
+}
+
+.input-button:hover {
+    color:rgb(25, 15, 85);
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.todo-input{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    width: 25vw;
+    height: 1rem;
+}
+
+.input-button{
+    padding: 1rem;
+    cursor: pointer;
+    height: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(25, 15, 85);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    list-style: none;
+    
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: rgb(25, 15, 85);
+    min-width: 25vw;
+    margin: 1rem;
+    padding: 1rem;
+    height: 1.5rem;
+}
+
+.check {
+    transition: all 0.5s ease;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fa-check, .fa-trash {
+    pointer-events: none;
+}
+
+.trash-button {
+    transition: all 0.3s ease;
+}
+
+.completed-button {
+    transition: all 0.3s ease;;
+}
+
+.fall {
+    transform: translateY(5rem);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.completed-button{
+    height: 1.5rem;
+    background-color: rgb(22, 116, 22);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0 0 0.5rem;
+    text-decoration: none;
+}
+
+.trash-button{
+    height: 1.5rem;
+    background-color: rgb(25, 15, 85);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 0 0 0.5rem;
+    text-decoration: none;
+}
+
+.completed-button:hover {
+    color:rgb(22, 116, 22);
+    background: white;
+    transition: all 0.5s ease;
+}
+
+.trash-button:hover {
+    color: rgb(25, 15, 85);
+    background-color: white;
+}
+
+.todo-item {
+    flex: 1;
+}
+
+select {
+    padding: 1rem;
+    margin: 1rem;
+    color:rgb(25, 15, 85);
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+select:hover {
+    color: white;
+    background: rgb(25, 15, 85);
+    transition: all 0.3s ease;
+}
